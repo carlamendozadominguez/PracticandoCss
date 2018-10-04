@@ -33,13 +33,13 @@ body{
   align-items: center;
   justify-content:center;
   
-   font-style: normal;
-   font-family: Roboto, serif;
-   letter-spacing: 1px;
-   font-size: 16px;
+  font-style: normal;
+  font-family: Roboto, serif;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 
-.list{
+.list {
   display: flex;
   align-items: center;
   background:transparent;
@@ -103,24 +103,31 @@ body{
 .item{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
+  justify-content: center;
   margin-top: 0;
 
 }
 
 
-.item-o {
+.item-o, .item-t {
   display: flex;
   align-items: center;
   height: 160px;
-  width: 200px;
+  width: 220px;
+  margin: 15px;
   margin-top:50px;
   position: relative;
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
+}
+
+.item-t{
+  height: 320px;
+  width: 270px;
+}
+.sub-item-one{
+  margin-left:40px;
 }
 
 .sub-item-three , .sub-item-four{
@@ -141,12 +148,20 @@ body{
   color: white;
 }
 
+.item-t .info{
+  top: -20px;
+  left: 16px;
+  width: 240px;
+  height: 190px;
+}
+
+
 .info-one{
   background: #ff9400;
 }
 
-.info-two{
-  background: #63cc4b;
+.info-two, .info-five{
+  background:green;
 }
 
 .info-three{
@@ -157,13 +172,7 @@ body{
   background: #37bcce;
 }
 
-.text-one{
-  text-align:center;
-  display:flex;
-  justify-content: center;
-}
-
-.sub-item-one, .sub-item-two, .sub-item-three, .sub-item-four{
+.sub-item-one, .sub-item-two, .sub-item-three, .sub-item-four, .sub-item-five {
   display: flex;
   flex-direction: column;
   
@@ -205,10 +214,31 @@ body{
   font-size: 20px;  
 }
 
+.item-t .title, .item-t .data, .item-t .resumen{
+  justify-content:flex-start;
+  color:#8c8c8c;
+  font-size: 14px;  
+  margin-left:0px;
+  width: 220px;
+  height: 30px;
+}
+
+.item-t .resumen{
+  margin-top: 10px;
+}
+
+.item-t .title{
+  padding-top: 170px;
+  color: rgb(61, 61, 61);
+  font-size: 20px;
+}
 .fa-exclamation-triangle{
   color: red;
 }
-
+.fa-long-arrow-alt-up{
+  color:green;
+  margin-right:18px;
+}
 .sub-item-two .resumen , .sub-item-three .resumen , .sub-item-four .resumen{
   color:#8c8c8c;
 }
